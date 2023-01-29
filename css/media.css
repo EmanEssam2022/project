@@ -1,0 +1,132 @@
+:root 
+{
+    --main-color: #ffe600;
+    --second-color: #212529;
+    --third-color: #ffffff; 
+    --four-color: #e35136; 
+    --five-color: #26a1c2;
+    --padding: 60px;
+    --transition: .8s;
+}
+
+@media(max-width:991px){
+    .nav-toggler
+    {
+        display: block;
+    }
+
+    .header .nav
+    {
+        width: 100%;
+        padding:0;
+        max-height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.5s ease;
+    }
+
+    .header .nav.open
+    {
+        visibility: visible;
+    }
+
+    .header .nav ul
+    {
+        padding:12px 15px 0;
+        margin-top: 12px;
+        border-top:1px solid rgba(255,255,255,0.2);
+    }
+
+    .header .nav ul li
+    {
+        display: block;
+        margin:0;
+    }
+    
+    .header .nav ul
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    .catalog-media ul
+    {
+       position: absolute; 
+       left: 0;
+    }
+
+    .catalog-media li  a
+    {
+        display: block;
+    }
+
+    
+    
+ }
+
+@media screen and (max-width:767px){
+    header .header-content .header-title 
+    {
+        text-align: center;
+    }
+
+    .header-content .header-img
+    {
+        display: none;
+    }
+
+   
+
+
+    /* start about */
+    .about
+    {
+        text-align: center;
+    }
+    /* end about */
+    /* start blog */
+    .ourblog
+    {
+        text-align: center;
+    }
+
+    .blog-content
+    {
+        margin-bottom: 20px;
+    }
+    /* end blog */
+    /* start contact */
+    .contactus
+    {
+        text-align: center;
+    }
+
+    .contactus .row  div:last-child img
+    {
+        display: none;
+    }
+
+    .contactus .contact
+    {
+        flex-direction: column;
+    }
+    /* end contact */
+    /* start footer */
+    footer .container
+    {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .logocopy
+    {
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+
+    .logocopy img
+    {
+        margin: auto;
+    }
+    /* start footer */
+}
